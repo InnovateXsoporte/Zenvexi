@@ -1,1152 +1,1133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mobile Hub - @conectado</title>
+
+<title>InnovateX Premium | Soporte e Instalación Remota</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* RESET TOTAL */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-/* CENTRADO GLOBAL */
-html {
-  display: flex;
-  justify-content: center;
+body{
+    background:#0d1117;
+    color:white;
 }
 
-/* FONDO GENERAL */
-/* FONDO PROFESIONAL PREMIUM */
-body {
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  min-height: 100vh;
-  padding: 24px;
-  color: #111827;
+/* HERO */
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  background:
-    radial-gradient(circle at top left, rgba(37,99,235,0.18), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(14,165,233,0.16), transparent 35%),
-    linear-gradient(135deg, #eef4ff 0%, #dbeafe 100%);
+.hero{
+    width:100%;
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
 }
 
-/* CUADRO CENTRAL PREMIUM */
-/* CUADRO CENTRAL PREMIUM */
-.mobile-hub {
-  width: 100%;
-  max-width: 650px; /* MÁS ANCHO */
-
-  background: rgba(255,255,255,0.78);
-  backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(255,255,255,0.55);
-
-  border-radius: 34px;
-
-  padding: 28px;
-
-  box-shadow:
-    0 25px 60px rgba(37,99,235,0.15),
-    0 10px 30px rgba(0,0,0,0.08);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* AJUSTE MOVIL */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .mobile-hub {
-    max-width: 100%;
-    border-radius: 26px;
-    padding: 18px;
-  }
+.hero-content{
+    max-width:900px;
 }
 
-/* PERFIL */
-/* PERFIL */
-.profile {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2px;
+.hero h1{
+    font-size:70px;
+    color:#00c8ff;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d6d6d6;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 38px;
+    background:#00c8ff;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+    color:#00c8ff;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(22,27,34,.88);
+    border:1px solid rgba(255,255,255,.06);
+    padding:35px;
+    border-radius:24px;
+    transition:.35s ease;
+    backdrop-filter:blur(10px);
+    position:relative;
+    overflow:hidden;
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.35);
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(0,200,255,.25);
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#00c8ff;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.card ul li{
+    margin:12px 0;
+    color:#d2d2d2;
 }
 
 
 
-.profile h1 {
-  font-size: 28px;
-  font-weight: 800;
-  margin-bottom: 6px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, #22d3ee, #2563eb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.drive-btn:hover{
+    background:white;
+}
+
+/* SUPPORT */
+
+.support{
+    background:#11161d;
+    text-align:center;
+    padding:100px 10%;
+}
+
+.support h2{
+    font-size:48px;
+    color:#00c8ff;
+    margin-bottom:25px;
+}
+
+.support p{
+    color:#cfcfcf;
+    line-height:2;
+    max-width:950px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#090c10;
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.title{
+    font-size:35px;
+}
+
+.support h2{
+    font-size:35px;
+}
+
+}
+/* LINKS ADOBE PRO */
+
+.adobe-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-top:25px;
 }
 
 
-.profile p {
-  font-size: 14px;
-  color: #9ca3af;
-  max-width: 260px;
-  margin: 0 auto;
+
+/* EFECTO BRILLO */
+
+.adobe-links a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+    transition:.6s;
 }
 
+.adobe-links a:hover::before{
+    left:100%;
+}
+
+/* EFECTO HOVER */
+
+.adobe-links a:hover{
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 0 25px rgba(0,200,255,.8);
+    background:linear-gradient(135deg,#00e1ff,#00a2ff);
+}
+/* BOTON CURSO PREMIUM */
+
+.card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(
+    90deg,
+    #00bfff,
+    #3b82f6,
+    transparent
+    );
+    opacity:.7;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border:1px solid rgba(0,191,255,.25);
+    box-shadow:
+    0 12px 35px rgba(0,0,0,.45),
+    0 0 20px rgba(0,191,255,.12);
+}
+
+/* TITULOS */
+
+.card h3{
+    font-size:24px;
+    margin-bottom:25px;
+    color:#ffffff;
+    font-weight:600;
+    line-height:1.4;
+}
 
 /* LINKS */
-.links {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-/* BOTONES */
-.link-card {
-  background: #ffffff;
-  color: #0d1117;
-  border-radius: 14px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  transition: transform 0.15s ease;
-}
-
-.link-card:active {
-  transform: scale(0.96);
-}
-
-/* BOTÓN CON IMAGEN */
-.link-card.has-img {
-  justify-content: flex-start;
-}
-
-.link-card img {
-  width: 28px;
-  height: 28px;
-  border-radius: 4px;
-}
-
-/* BOTÓN PRINCIPAL (GANADOR) */
-.link-card.primary {
-  background: linear-gradient(135deg,#00e0ff,#00b4ff);
-  color: #0a0c10;
-  font-weight: 700;
-}
-
-/* ANIMACIÓN SUTIL */
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(0,224,255,0.4); }
-  70% { box-shadow: 0 0 0 14px rgba(0,224,255,0); }
-  100% { box-shadow: 0 0 0 0 rgba(0,224,255,0); }
-}
-
-.link-card.primary {
-  animation: pulse 2.8s infinite;
-}
-
-/* REDES */
-.socials {
-  margin-top: 40px;
-  display: flex;
-  gap: 24px;
-}
-
-.socials a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.7;
-}
-
-.socials a:hover {
-  opacity: 1;
-}
-
-/* LEGAL */
-.legal {
-  font-size: 11px;
-  color: #6b7280;
-  margin-top: 36px;
-  text-align: center;
-  line-height: 1.5;
-}
-/* CATEGORIAS */
-.category {
-  width: 100%;
-}
-
-.category summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-.category summary::-webkit-details-marker {
-  display: none;
-}
-
-/* CONTENEDOR DE PRODUCTOS */
-.products {
-  margin-top: 12px;
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  padding: 10px;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  position: relative;
-}
-.product-tile.hot {
-  transform: scale(1.08);
-}
-/* ocultar scrollbar */
-.products::-webkit-scrollbar {
-  display: none;
-}
-
-/* PRODUCTOS INDIVIDUALES */
-.product-card {
-  background: rgba(255,255,255,0.08);
-  color: #ffffff;
-  padding: 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid rgba(255,255,255,0.12);
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.product-card:active {
-  transform: scale(0.96);
-}
-
-.product-card:hover {
-  background: rgba(255,255,255,0.15);
-}
-/* TARJETA PRODUCTO DESPLEGADO */
-.product-tile {
-  flex: 0 0 auto;
-  width: 160px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #fff;
-  scroll-snap-align: start;
-  transition: transform .2s ease;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-
-}
-.product-tile:hover {
-  transform: scale(1.05);
-}
-.product-tile:active {
-  transform: scale(0.97);
-}
-
-/* IMAGEN */
-.product-tile-img {
-  width: 100%;
-  height: 120px;
-}
-
-.product-tile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product-tile-info {
-  width: 100%;
-    background: linear-gradient(135deg, #0ea5e9, #2563eb);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.product-tile-info span {
- font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.3;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.35);
-}
-
-.product-tile.hot .product-tile-info {
-  background: linear-gradient(135deg, #22d3ee, #2563eb);
-  box-shadow: inset 0 0 20px rgba(255,255,255,0.15);
-}
-.product-tile-info::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -60%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.15),
-    transparent
-  );
-}
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.carousel-btn.left {
-  left: 0;
-}
-
-.carousel-btn.right {
-  right: 0;
-}
-
-.link-card i {
-  width: 22px;
-  height: 22px;
-  margin-right: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-  
-.link-card svg {
-  width: 22px;
-  height: 22px;
-  stroke-width: 2.2;
-  color: #0a0c10;
-}
-.product-tile {
-  flex: 0 0 auto;
-  width: 160px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #fff;
-  scroll-snap-align: start;
-  transition: transform .2s ease;
-}
 
-.link-card.primary svg {
-  filter: drop-shadow(0 1px 2px rgba(255,255,255,0.4));
+.adobe-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
 }
-.link-card.primary i {
-  color: #0a0c10;
-  filter: drop-shadow(0 1px 2px rgba(255,255,255,0.4));
-  }
-.link-card .lucide {
-  font-size: 22px;
-  margin-right: 12px;
-  display: flex;
-  align-items: center;
-  color: #0a0c10;
-}
-
-/* SNAP + DESLIZABLE */
-.product-tile-img.slider {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.product-tile-img.slider::-webkit-scrollbar {
-  display: none;
-}
-
-.product-tile-img.slider img {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  position: relative;
-  opacity: 1;
-  transition: none;
-}
-.products.single {
-  justify-content: center;
-}
-
-.products.single .product-tile {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-  width: 100%;
-  max-width: 320px;
-  border-radius: 20px;
-  transform: scale(1.05);
-}
-
-/* imagen más grande */
-.products.single .product-tile-img {
-    height: auto;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* texto más visible */
-.products.single .product-tile-info span {
-  font-size: 14px;
-}
-
-/* ICONOS REDES PRO */
-/* ICONOS REDONDOS PRO */
-/* REDES COMPACTAS */
-.socials-icons {
-  margin-top: -4px;
-
-  margin-bottom: 24px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 10px;
-}
-
-.socials-icons a {
-  width: 52px;
-  height: 52px;
-
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: white;
-
-  box-shadow:
-    0 6px 18px rgba(0,0,0,0.12);
-
-  transition: .2s ease;
-}
-
-.socials-icons img {
-  width: 46px;
-  height: 46px;
-  object-fit: contain;
-}
-
-.socials-icons a:hover {
-  transform: translateY(-4px) scale(1.08);
-  background: rgba(255,255,255,0.15);
-}
-
-.socials-icons a:active {
-  transform: scale(0.9);
-}
-/* GRID PROFESIONAL */
-/* GRID RESPONSIVE */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 16px;
-}
-
-@media (max-width: 768px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* TARJETA */
-.grid-card {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  border-radius: 16px;
-  overflow: hidden;
-  text-decoration: none;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  padding: 10px;
-
-  background: #111827;
-
-  transition: all .22s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-}
-
-.grid-card:hover {
-  transform: translateY(-4px) scale(1.03);
-}
-
-.grid-card img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain; /* <- CAMBIAR ESTO */
-
-  padding: 10px; /* opcional */
-  background: #fff;
-}
-
-.grid-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.82),
-    rgba(0,0,0,.15)
-  );
-}
 
-.grid-card span {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-/* TITULO CATEGORIA */
-.section-title {
-  margin-top: 18px;
-  margin-bottom: 8px;
-  font-size: 22px;
-  font-weight: 800;
-  text-align: center;
-  color: #111827;
-}
-/* BOTON WHATSAPP PRO */
-.whatsapp-btn {
-  width: 100%;
-  background: linear-gradient(135deg,#25D366,#1ebe5d);
-  border-radius: 18px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-  transition: all .22s ease;
-  margin-bottom: 18px;
-}
-
-.whatsapp-btn:hover {
-  transform: translateY(-3px) scale(1.01);
-}
-
-.whatsapp-btn:active {
-  transform: scale(.97);
-}
+/* BOTONES PROFESIONALES */
 
-/* LOGO */
-.whatsapp-btn img {
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-  background: rgba(255,255,255,0.15);
-  border-radius: 50%;
-  padding: 8px;
+.adobe-links a,
+.drive-btn{
+    text-decoration:none;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    color:#dbe7ff;
+    padding:16px 18px;
+    border-radius:16px;
+    font-weight:500;
+    transition:.3s ease;
+    position:relative;
+    overflow:hidden;
+    letter-spacing:.3px;
 }
 
-/* TEXTO */
-.whatsapp-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.whatsapp-text strong {
-  color: white;
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.whatsapp-text span {
-  color: rgba(255,255,255,.88);
-  font-size: 13px;
-  margin-top: 4px;
-}
-/* DESCRIPCION LIMPIA */
-.profile-description {
-  font-size: 15px;
-  font-weight: 600;
-
-  line-height: 1.6;
+/* EFECTO HOVER FINO */
 
-  color: #6b7280;
-
-  margin-top: 0;
-  margin-bottom: 14px;
-
-  text-align: center;
+.adobe-links a:hover,
+.drive-btn:hover{
+    background:rgba(0,191,255,.08);
+    border-color:rgba(0,191,255,.25);
+    transform:translateX(6px);
+    color:white;
+    box-shadow:
+    0 0 18px rgba(0,191,255,.12);
 }
-/* NOMBRE PREMIUM */
-.profile h1 {
-  font-size: 32px;
-  font-weight: 900;
-
-  margin-bottom: 8px;
 
-  letter-spacing: -1px;
+/* BOTON CURSO PREMIUM */
 
-  background: linear-gradient(
+.curso-btn{
+    background:linear-gradient(
     135deg,
-    #2563eb,
-    #0ea5e9
-  );
+    #ff7b00,
+    #ff4d00
+    ) !important;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/* LOGO PERFIL */
-.profile img {
-  width: 240px;
-  height: 240px;
+    border:none !important;
+    color:white !important;
+    font-weight:700 !important;
 
-  border-radius: 50%;
-  object-fit: cover;
-
-  margin-bottom: 10px;
-
-  border: 5px solid rgba(255,255,255,0.92);
-
-  box-shadow:
-    0 12px 35px rgba(37,99,235,0.20),
-    0 8px 20px rgba(0,0,0,0.10);
-
-  background: white;
-}
-/* TITULO PREMIUM INNOVATEX */
-.brand-title{
-  font-size: 52px;
-  font-weight: 900;
-  letter-spacing: -2px;
-
-  line-height: 1;
-
-  margin-top: 10px;
-  margin-bottom: 14px;
-
-  text-transform: none;
-
-  background: linear-gradient(
-    135deg,
-    #0ea5e9 0%,
-    #2563eb 45%,
-    #7c3aed 100%
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  text-shadow:
-    0 6px 18px rgba(37,99,235,0.18);
-
-  animation: glowText 3s ease-in-out infinite alternate;
+    box-shadow:
+    0 8px 20px rgba(255,94,0,.25);
 }
 
-/* RESALTAR LA X */
-.brand-title span{
-  color: #06b6d4;
-  -webkit-text-fill-color: #06b6d4;
+.curso-btn:hover{
+    transform:translateY(-4px) scale(1.02) !important;
 
-  text-shadow:
-    0 0 18px rgba(6,182,212,0.6),
-    0 0 30px rgba(6,182,212,0.35);
+    box-shadow:
+    0 12px 30px rgba(255,94,0,.35) !important;
 }
 
-/* EFECTO SUAVE */
-@keyframes glowText{
-  from{
-    transform: scale(1);
-    filter: brightness(1);
-  }
+/* LISTAS */
 
-  to{
-    transform: scale(1.02);
-    filter: brightness(1.15);
-  }
+.card ul li{
+    margin:14px 0;
+    color:#b7c2d0;
+    font-size:15px;
 }
 
-/* MOVIL */
-@media (max-width:768px){
+/* TITULOS GENERALES */
 
-  .brand-title{
-    font-size: 40px;
-  }
+.title{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:70px;
+    color:white;
+    font-weight:700;
+}
+
+/* FONDO GENERAL MÁS PREMIUM */
+
+body{
+    background:
+    radial-gradient(circle at top,#111827,#070b11 70%);
+    color:white;
+}
+
+.curso-btn:hover{
+    transform:translateY(-8px) scale(1.05) !important;
+    box-shadow:0 0 35px rgba(255,140,0,.9) !important;
+}
+
+/* EFECTO BRILLO */
+
+@keyframes brilloCurso{
+
+0%{
+box-shadow:0 0 10px rgba(255,140,0,.3);
+}
+
+50%{
+box-shadow:0 0 30px rgba(255,140,0,.9);
+}
+
+100%{
+box-s56hadow:0 0 10px rgba(255,140,0,.3);
+}
 
 }
-/* EFECTO LLAMATIVO WHATSAPP */
+.card h3 span{
+    background:#0ea5e9;
+    color:white;
+    font-size:12px;
+    padding:5px 10px;
+    border-radius:30px;
+    margin-left:8px;
+}
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,
+    rgba(0,191,255,.15),
+    transparent 40%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:950px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    padding:12px 22px;
+    border-radius:50px;
+    margin-bottom:30px;
+    color:#7dd3fc;
+    backdrop-filter:blur(10px);
+    font-size:14px;
+    letter-spacing:.5px;
+}
+
+.hero h1{
+    font-size:78px;
+    font-weight:800;
+    margin-bottom:25px;
+    line-height:1.1;
+    color:white;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero-text{
+    font-size:21px;
+    color:#cbd5e1;
+    line-height:1.9;
+    max-width:850px;
+    margin:auto;
+    margin-bottom:45px;
+}
+
+.hero-features{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:45px;
+}
+
+.feature{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:14px 22px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#dbeafe;
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-5px);
+    border-color:rgba(56,189,248,.3);
+    background:rgba(56,189,248,.08);
+}
+
+.feature i{
+    color:#38bdf8;
+    font-size:18px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
 .whatsapp-btn{
-  position: relative;
-  overflow: hidden;
+    background:linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+    ) !important;
 
-  animation: whatsappPulse 1.8s infinite;
+    color:white !important;
+    box-shadow:
+    0 10px 25px rgba(34,197,94,.25);
 }
 
-/* PULSO */
-@keyframes whatsappPulse{
-
-  0%{
-    transform: scale(1);
+.whatsapp-btn:hover{
+    transform:translateY(-5px) scale(1.03);
     box-shadow:
-      0 0 0 0 rgba(37,211,102,0.65),
-      0 10px 25px rgba(0,0,0,0.35);
-  }
-
-  50%{
-    transform: scale(1.02);
-    box-shadow:
-      0 0 0 18px rgba(37,211,102,0),
-      0 14px 35px rgba(37,211,102,0.35);
-  }
-
-  100%{
-    transform: scale(1);
-    box-shadow:
-      0 0 0 0 rgba(37,211,102,0),
-      0 10px 25px rgba(0,0,0,0.35);
-  }
+    0 15px 35px rgba(34,197,94,.35);
 }
 
-/* BRILLO QUE PASA */
-.whatsapp-btn::before{
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: -120%;
-
-  width: 80%;
-  height: 100%;
-
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.35),
-    transparent
-  );
-
-  transform: skewX(-20deg);
-
-  animation: shine 2.5s infinite;
+.secondary-btn{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    color:white !important;
 }
 
-@keyframes shine{
-  0%{
-    left: -120%;
-  }
+.secondary-btn:hover{
+    background:rgba(255,255,255,.08);
+}
 
-  100%{
-    left: 140%;
-  }
+.btn i{
+    margin-right:10px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:52px;
+}
+
+.hero-text{
+    font-size:17px;
+}
+
+.hero-features{
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+}
+.support{
+    position:relative;
+    background:
+    linear-gradient(
+    180deg,
+    #0b1118,
+    #06090f
+    );
+    overflow:hidden;
+}
+
+.support::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(56,189,248,.08);
+    filter:blur(120px);
+    top:-150px;
+    right:-100px;
+}
+
+.support-container{
+    position:relative;
+    z-index:2;
+    max-width:1200px;
+    margin:auto;
+}
+
+.support-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    padding:12px 22px;
+    border-radius:50px;
+    margin-bottom:30px;
+    color:#7dd3fc;
+    font-size:14px;
+    backdrop-filter:blur(10px);
+}
+
+.support h2{
+    font-size:58px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:30px;
+    color:white;
+}
+
+.support-text{
+    max-width:950px;
+    margin:auto;
+    font-size:20px;
+    line-height:2;
+    color:#cbd5e1;
+    margin-bottom:70px;
+}
+
+.support-features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-bottom:60px;
+}
+
+.support-box{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:35px;
+    border-radius:24px;
+    transition:.3s ease;
+    backdrop-filter:blur(10px);
+}
+
+.support-box:hover{
+    transform:translateY(-8px);
+    border-color:rgba(56,189,248,.3);
+    background:rgba(56,189,248,.06);
+}
+
+.support-box i{
+    font-size:38px;
+    color:#38bdf8;
+    margin-bottom:22px;
+}
+
+.support-box h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:white;
+}
+
+.support-box p{
+    color:#b8c4d6;
+    line-height:1.8;
+}
+
+.support-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+.support h2{
+    font-size:40px;
+}
+
+.support-text{
+    font-size:17px;
+}
+
+.support-buttons{
+    flex-direction:column;
+}
+
+}
+/* LOGO IMAGEN PREMIUM */
+
+.main-logo{
+    width:95px;
+    height:95px;
+    object-fit:cover;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.05);
+
+    padding:10px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.45),
+    0 0 25px rgba(56,189,248,.25);
+
+    transition:.4s ease;
+
+    animation:logoFloat 4s ease-in-out infinite;
+}
+
+/* EFECTO HOVER */
+
+.main-logo:hover{
+    transform:scale(1.06) rotate(2deg);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.55),
+    0 0 35px rgba(56,189,248,.45);
+}
+
+/* EFECTO FLOTANTE */
+
+@keyframes logoFloat{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.main-logo{
+    width:80px;
+    height:80px;
+}
+
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<section class="mobile-hub">
+<!-- HERO -->
 
-  <!-- PERFIL -->
- <div class="profile">
-  <img src="logo.png" alt="ZENVEXI">
-  <h1 class="brand-title">
-  Innovate<span>X</span>
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+<div class="logo-box">
+
+<img src="logo.png" alt="InnovateX Logo" class="main-logo">
+
+<div class="logo-text">
+<h2>InnovateX</h2>
+<span>PREMIUM SUPPORT</span>
+</div>
+
+</div>
+<div class="hero-badge">
+<i class="fa-solid fa-shield-halved"></i>
+Soporte Técnico Premium 2026
+</div>
+
+<h1>
+InnovateX <span>Premium</span>
 </h1>
-<p class="profile-description">
-Asistencia Tecnica Especializada. Instalacion y Soporte Remoto de Software
+
+<p class="hero-text">
+Especialistas en instalación remota de programas profesionales,
+optimización de computadoras, activaciones, recuperación de sistemas
+y soporte técnico personalizado para estudiantes, empresas y creadores de contenido.
 </p>
+
+<div class="hero-features">
+
+<div class="feature">
+<i class="fa-solid fa-laptop-medical"></i>
+<span>Soporte Remoto</span>
 </div>
-<!-- REDES -->
-<!-- REDES SOLO ICONOS -->
-<div class="socials-icons">
 
-  <a href="https://www.facebook.com/profile.php?id=61574505757837" target="_blank">
-    <img src="facebook-fotor-bg-remover-2026042319248.png" alt="Facebook">
-  </a>
+<div class="feature">
+<i class="fa-solid fa-download"></i>
+<span>Instalación Profesional</span>
+</div>
 
-  <a href="https://t.me/Jeampierti" target="_blank">
-    <img src="telegran.png" alt="Instagram">
-  </a>
+<div class="feature">
+<i class="fa-solid fa-shield-virus"></i>
+<span>Optimización y Seguridad</span>
+</div>
 
 </div>
-  <!-- LINKS -->
-<div class="links">
 
-  <!-- CATEGORIA 1 -->  
+<div class="hero-buttons">
 
-  <!-- CONTACTO WHATSAPP -->
-
-<!-- BOTON WHATSAPP -->
-
-<a href="https://wa.me/51945565265?text=Hola%20quiero%20información"
-   target="_blank"
-   class="whatsapp-btn">
-
-  <img src="whapsap png.png" alt="WhatsApp">
-
-  <div class="whatsapp-text">
-    <strong>Contáctanos por WhatsApp</strong>
-    <span>Atención rápida y soporte personalizado</span>
-  </div>
-
+<a href="https://wa.link/4s6gil" class="btn whatsapp-btn" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+Contactar por WhatsApp
 </a>
 
-<!-- BOTON CARPETA PREMIUM -->
-
-  <!-- CATEGORIA 2 -->
- <!-- PROGRAMAS ADOBE -->
-
-<!-- PROGRAMAS ADOBE -->
-
-<div class="category">
-
-  <div class="section-title">
-    Programas de Diseño Adobe
-  </div>
-
-  <div class="products-grid">
-
-    <a href="https://drive.google.com/file/d/1e3u2dGCXkC0AApYkl1F4lgeCgjPmfRCY/view?usp=sharing" target="_blank" class="grid-card">
-      <img src="https://pctek.ir/image/cache/catalog/Gallery/Blog/premier%20pro/premier%20pro%202023%20System%20requirments-500x350h.jpg">
-      <span>Premiere Pro</span>
-    </a>
-
-  
-
-  </div>
+<a href="#catalogo-software" class="btn secondary-btn">
+<i class="fa-solid fa-folder-open"></i>
+Ver Catálogo
+</a>
 
 </div>
 
-  <!-- CATEGORIA 3 - AURICULARES -->
-   <!-- AURICULARES PRO -->
-
-<div class="category">
-
-  <div class="section-title">
-    Hardware para Repotenciar tu PC
-  </div>
-
-  <div class="products-grid">
-
-    <!-- 1 -->
-    <a href="https://amzn.to/4wpUV7q"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_SX679_.jpg">
-
-      <span>AMD Ryzen 7 7800</span>
-
-    </a>
-
-    <!-- 2 -->
-    <a href="https://amzn.to/4dh02hB"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/81MH+nx+shL._AC_SX466_.jpg">
-
-      <span>ASUS ROG</span>
-
-    </a>
-
-    <!-- 3 -->
-    <a href="https://amzn.to/4uJOHxL"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/71xOTU97xEL._AC_SX466_.jpg">
-
-      <span>16GB DDR5</span>
-
-    </a>
-
-    <!-- 4 -->
-    <a href="https://amzn.to/42qkU15"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/71z4wLCzcIL._AC_SX300_SY300_QL70_FMwebp_.jpg">
-
-      <span>RTX 5070 Ti 16G</span>
-
-    </a>
-
-    <!-- 5 -->
-    <a href="https://amzn.to/4wppkTA"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/61uDl4amtnL._AC_SX466_.jpg">
-
-      <span>NVMe de 1TB</span>
-
-    </a>
-
-    <!-- 6 -->
-    <a href="https://amzn.to/4eBu41Y"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/71FAUQmc0sL._AC_SX466_.jpg">
-
-      <span>GIGABYTE 750GM</span>
-
-    </a>
-
-    <!-- 7 -->
-    <a href="https://amzn.to/4noDU9z"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/71OwJlxlb0L._AC_SX466_.jpg">
-
-      <span>Wireless Studio Pro</span>
-
-    </a>
-
-    <!-- 8 -->
-    <a href="https://amzn.to/4uBp3uW"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/61meQuPPc-L._AC_SX466_.jpg">
-
-      <span>Teclado mecánico</span>
-
-    </a>
-
-    <!-- 9 -->
-    <a href="https://amzn.to/4u0rQ0Q"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/51FqInhakoL._AC_SX679_.jpg">
-
-      <span>Barra de luz para monitor</span>
-
-    </a>
-
-  </div>
-
 </div>
-<!-- CATEGORIA 4 - MOUSE GAMING -->
- <!-- MOUSE GAMING PRO -->
-
-<div class="category">
-
-  <div class="section-title">
-  Gaming Pro
-  </div>
-
-  <div class="products-grid">
-
-    <!-- 1 -->
-    <a href="https://s.click.aliexpress.com/e/_c3zdPyJ1"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://cdn.shopify.com/s/files/1/0967/2015/9039/files/11.avif?v=1769318560">
-
-      <span>Logitech G502 HERO</span>
-
-    </a>
-
-    <!-- 2 -->
-    <a href="https://s.click.aliexpress.com/e/_c2uIaqR5"
-       target="_blank"
-       class="grid-card">
-
-      <img src="data:image/jpeg;base64,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">
-
-      <span>auriculares inalámbricos</span>
-
-    </a>
-
-    <!-- 3 -->
-    <a href="https://s.click.aliexpress.com/e/_c3xR9vaJ"
-       target="_blank"
-       class="grid-card">
-
-      <img src="data:image/jpeg;base64,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">
-
-      <span>Auriculares Inalámbricos</span>
-
-    </a>
-
-    <!-- 4 -->
-    <a href="https://amzn.to/4uNBjc1"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/81fYeA0JsnL._AC_SX466_.jpg">
-
-      <span>Alfombrilla de mouse</span>
-
-    </a>
-
-    <!-- 5 -->
-    <a href="https://amzn.to/4faTpju"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/61bCeQBjUwL._AC_SX679_.jpg">
-
-      <span>Ultra HD 4K</span>
-
-    </a>
-
-    <!-- 6 -->
-
-    
-    <!-- 8 -->
-    <a href="https://amzn.to/4u0sPhy"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/41f6SnKT8ML._AC_SY741_.jpg">
-
-      <span>Altavoces de PC</span>
-
-    </a>
-
-    <!-- 9 -->
-    <a href="https://amzn.to/4noET9L"
-       target="_blank"
-       class="grid-card">
-
-      <img src="https://m.media-amazon.com/images/I/71ukabvTWjL._AC_SX679_.jpg">
-
-      <span>Cyber RGB Edition</span>
-
-    </a>
-
-  </div>
-
-</div>
-
-
-  <!-- CATEGORIA 3 -->
-   
-  </details>
-
-</div>
- <button class="carousel-btn right">›</button>
-
-</div>
-
-
-
 
 </section>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-<script>
-  document.querySelectorAll('.product-tile-img.slider').forEach(slider => {
-    const images = slider.querySelectorAll('img');
-    let index = 0;
-    let interval = null;
-    let isInteracting = false;
 
-    const scrollToIndex = i => {
-      slider.scrollTo({
-        left: slider.clientWidth * i,
-        behavior: 'smooth'
-      });
-    };
+<!-- CARPETAS -->
 
+<!-- CATALOGO SOFTWARE -->
 
-    const stopSlider = () => {
-      clearInterval(interval);
-      interval = null;
-    };
+<section class="section" id="catalogo-software">
 
-    // detectar slide manual
-    slider.addEventListener('touchstart', () => {
-      isInteracting = true;
-      stopSlider();
-    }, { passive: true });
+<h2 class="title">
+🗂️ Catálogo Profesional
+</h2>
 
-    slider.addEventListener('touchend', () => {
-      index = Math.round(slider.scrollLeft / slider.clientWidth);
-      scrollToIndex(index);
-      isInteracting = false;
-      startSlider();
-    });
+<div class="cards">
 
-    slider.addEventListener('scroll', () => {
-      index = Math.round(slider.scrollLeft / slider.clientWidth);
-    });
+<!-- DRIVERS -->
 
-    // desktop
-    slider.addEventListener('mouseenter', stopSlider);
-    slider.addEventListener('mouseleave', startSlider);
+<div class="card">
+<h3>
+<i class="fa-solid fa-layer-group"></i>
+PAQUETES PRINCIPALES
 
-    // iniciar
-    startSlider();
-  });
-</script>
-<script>
-document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-  const container = wrapper.querySelector('.products');
-  const btnLeft = wrapper.querySelector('.left');
-  const btnRight = wrapper.querySelector('.right');
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1UCNEj2o7WwgSp_87NWYdKFysKmrYvjPa?usp=sharing" target="_blank">
+<i class="fa-solid fa-video"></i>
+PACK CREADOR DE CONTENIDO
+</a>
+
+<a href="https://drive.google.com/drive/folders/1wBW0EM4oc7rtqGBJU6DrYlmTI-8bR7IA?usp=sharing" target="_blank">
+<i class="fa-solid fa-pen-ruler"></i>
+PACK DISEÑO GRÁFICO PRO
+</a>
+
+<a href="https://drive.google.com/drive/folders/1XA6GaDbP70YuszngxsgaoeqaRpp5hEnQ?usp=sharing" target="_blank">
+<i class="fa-solid fa-building"></i>
+PACK INGENIERÍA COMPLETA
+</a>
 
 
+</div>
 
-  // botones
-  btnRight.addEventListener('click', () => {
-    container.scrollBy({ left: 200, behavior: 'smooth' });
-  });
+</div>
 
-  btnLeft.addEventListener('click', () => {
-    container.scrollBy({ left: -200, behavior: 'smooth' });
-  });
+<!-- ADOBE -->
+
+<!-- ADOBE -->
+
+<div class="card">
+
+<h3>
+<i class="fa-brands fa-adobe"></i>
+Adobe Creative Cloud <span>2020 - 2026</span>
+</h3>
+
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1P4ffwOIuqYZlUxVdygS2pzYezuQscEsx?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2020
+</a>
+
+<a href="https://drive.google.com/drive/folders/1jbcnYP0xlTsCGl0zMiBY-WMamVJfev8-?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2021
+</a>
+
+<a href="https://drive.google.com/drive/folders/12awP8HbKRuZpYXII6WrJJKbOwJ5qZBKn?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2022
+</a>
+
+<a href="https://drive.google.com/drive/folders/1xr16B86VJMDF__tnMp_IyX7VX8wFfQwR?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2024
+</a>
+
+<a href="https://drive.google.com/drive/folders/18cnlSFvoB220sZVqSUOLbJSTkCwk9qbU?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2025
+</a>
+
+<a href="https://drive.google.com/drive/folders/1HgQpN8ZlXtz3irsdm26rgU8ib7wLTqkd?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe 2026
+</a>
+
+<a href="https://sites.google.com/view/academiadigitalproductiva/otros-cursos/curso-de-dise%C3%B1o-grafico" target="_blank" class="curso-btn">
+Cursos de Diseño Gráfico desde Cero
+</a>
+</div>
+
+</div>
+
+<!-- AUTODESK PREMIUM -->
+
+<div class="card">
+
+<h3>Ingeniería & Arquitectura (Autodesk) 2020–2026</h3>
+
+<div class="adobe-links">
+
+<a href="LINK_AUTODESK_2020" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2020
+</a>
+
+<a href="LINK_AUTODESK_2021" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2021
+</a>
+
+<a href="LINK_AUTODESK_2022" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2022
+</a>
+
+<a href="LINK_AUTODESK_2023" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2023
+</a>
+
+<a href="LINK_AUTODESK_2024" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2024
+</a>
+
+<a href="https://drive.google.com/drive/folders/1rFXf_j4QCUhGGfCcF2bMpd6DnDbLFIod?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2025
+</a>
+
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 2026
+</a>
+
+</div>
+
+</div>
+<!-- FILMORA -->
+
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-desktop"></i>
+Software Básico para PC
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1uFOaj8dbQfe9nry4PSEAAIQJYK4gYopw?usp=sharing" target="_blank">
+ OFFICE 2024
+</a>
+
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+ Adobe Acrobat Pro DC 2021
+</a>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ Programas multimedia
+</a>
+</div>
+
+</div>
+
+<!-- AUTODESK -->
+
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-film"></i>
+Edición Profesional Full
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1PdhorDPc3xM0CKP8ObV7eThmr4315OIq?usp=sharing" target="_blank">
+Filmora (9–14)
+</a>
+
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+Sony Vegas Pro
+</a>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+Camtasia
+</a>
+<a href="https://drive.google.com/drive/folders/1E-27qB7d0iF1-V-h8AS7X7CirPkw_W7T?usp=sharing" target="_blank">
+4K Video Downloader
+</a>
+<a href="https://drive.google.com/drive/folders/1E-27qB7d0iF1-V-h8AS7X7CirPkw_W7T?usp=sharing" target="_blank">
+CapCut
+</a>
+</div>
+
+</div>
+
+<!-- COREL -->
+
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-palette"></i>
+Diseño Gráfico Full 2025-2026
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1EIb_Ksck0Qwifp2W9azx7cDp3P3gNoUJ?usp=sharing" target="_blank">
+CorelDRAW 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Adobe Lightroom 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
+Adobe InDesign 2026
+</a>
+</div>
+
+</div>
 
 
-});
-</script>
+<!-- RECUPERACION -->
 
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-screwdriver-wrench"></i>
+Recuperación y Optimización
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1nMk7504BeDLwZZiHGpnjP0KkGrONkMgM?usp=sharing" target="_blank">
+EaseUS Data Recovery Wizard 
+</a>
+
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Recuva
+</a>
+
+<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
+CCleaner
+</a>
+</div>
+
+</div>
+<!-- BASICOS -->
+
+<!-- SEGURIDAD -->
+
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-shield-halved"></i>
+Seguridad PC
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1EIb_Ksck0Qwifp2W9azx7cDp3P3gNoUJ?usp=sharing" target="_blank">
+Kaspersky
+</a>
+
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Avast Antivirus
+</a>
+
+<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
+Windows Defender
+</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOPORTE -->
+
+<section class="support">
+
+<div class="support-container">
+
+<div class="support-badge">
+<i class="fa-solid fa-bolt"></i>
+InnovateX Premium Services
+</div>
+
+<h2>
+Impulsamos tu PC al siguiente nivel
+</h2>
+
+<p class="support-text">
+En InnovateX Premium ofrecemos instalación remota de programas profesionales,
+optimización avanzada de computadoras, activaciones, mantenimiento y soporte técnico personalizado.
+Trabajamos constantemente agregando nuevo contenido, actualizando carpetas,
+drivers y herramientas profesionales para brindarte un servicio moderno,
+rápido y confiable.
+</p>
+
+<div class="support-features">
+
+<div class="support-box">
+<i class="fa-solid fa-cloud-arrow-down"></i>
+<h3>Contenido Actualizado</h3>
+<p>
+Nuevos programas, versiones y herramientas agregadas constantemente.
+</p>
+</div>
+
+<div class="support-box">
+<i class="fa-solid fa-microchip"></i>
+<h3>Drivers & Optimización</h3>
+<p>
+Soluciones para mejorar el rendimiento y estabilidad de tu computadora.
+</p>
+</div>
+
+<div class="support-box">
+<i class="fa-solid fa-headset"></i>
+<h3>Asistencia Remota</h3>
+<p>
+Soporte técnico profesional mediante conexión remota personalizada.
+</p>
+</div>
+
+</div>
+
+<div class="support-buttons">
+
+<a href="https://wa.link/4s6gil" class="btn whatsapp-btn" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+Solicitar Soporte
+</a>
+
+<a href="#catalogo-software" class="btn secondary-btn">
+<i class="fa-solid fa-folder-open"></i>
+Explorar Catálogo
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 InnovateX Premium | Soporte e Instalación Remota
+
+</footer>
 
 </body>
 </html>
