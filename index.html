@@ -91,11 +91,12 @@ body{
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
 }
 
 .card{
+
     background:rgba(22,27,34,.88);
     border:1px solid rgba(255,255,255,.06);
     padding:35px;
@@ -588,7 +589,7 @@ box-s56hadow:0 0 10px rgba(255,140,0,.3);
 
 .support-features{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
     margin-bottom:60px;
 }
@@ -711,6 +712,122 @@ transform:translateY(0px);
 }
 
 }
+.subtitulo-categoria{
+    margin-top:22px;
+    margin-bottom:12px;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#7dd3fc;
+
+    border-left:3px solid #0ea5e9;
+    padding-left:12px;
+
+    letter-spacing:.3px;
+}
+/* TIKTOK BUTTON PREMIUM */
+
+.tiktok-logo{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    margin-top:20px;
+
+    padding:14px 24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    color:white;
+    text-decoration:none;
+
+    font-weight:600;
+    font-size:15px;
+
+    backdrop-filter:blur(10px);
+
+    transition:.35s ease;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
+}
+
+/* ICONO */
+
+.tiktok-logo i{
+    font-size:22px;
+
+    background:linear-gradient(
+    135deg,
+    #00f2ea,
+    #ff0050
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* HOVER */
+
+.tiktok-logo:hover{
+    transform:translateY(-5px) scale(1.03);
+
+    border-color:rgba(255,255,255,.18);
+
+    background:rgba(255,255,255,.08);
+
+    box-shadow:
+    0 0 25px rgba(255,0,80,.25);
+}
+
+/* ARREGLAR ALTURAS DE LAS CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+    align-items:stretch;
+}
+
+/* TODAS LAS TARJETAS MISMA ALTURA */
+
+.card{
+overflow:hidden;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:flex-start;
+}
+
+/* CONTENIDO INTERNO */
+
+.adobe-links{
+    flex:1;
+}
+
+/* EVITA ESPACIOS GIGANTES */
+
+.card h3{
+    min-height:auto;
+}
+
+/* RESPONSIVE MÁS LIMPIO */
+
+@media(max-width:768px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -729,6 +846,10 @@ transform:translateY(0px);
 <img src="logo.png" alt="InnovateX Logo" class="main-logo">
 
 <div class="logo-text">
+    <a href="https://www.tiktok.com/@innovatexsoporte?is_from_webapp=1&sender_device=pc" target="_blank" class="tiktok-logo">
+    <i class="fa-brands fa-tiktok"></i>
+    Síguenos en TikTok
+</a>
 <h2>InnovateX</h2>
 <span>PREMIUM SUPPORT</span>
 </div>
@@ -835,39 +956,47 @@ PACK INGENIERÍA COMPLETA
 
 <h3>
 <i class="fa-brands fa-adobe"></i>
-Adobe Creative Cloud <span>2020 - 2026</span>
+Adobe Creative Cloud <span>2025</span>
 </h3>
 
 <div class="adobe-links">
 
-<a href="https://drive.google.com/drive/folders/1P4ffwOIuqYZlUxVdygS2pzYezuQscEsx?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1wkykRIaixdeCLqYKoluBUD5kISjJ5L02?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2020
+Adobe Photoshop 2025
 </a>
 
-<a href="https://drive.google.com/drive/folders/1jbcnYP0xlTsCGl0zMiBY-WMamVJfev8-?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1kpD8oaARh7pc2YHD7LQtAKO-Lodx6nXB?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2021
+Adobe Illustrator 2025
 </a>
 
-<a href="https://drive.google.com/drive/folders/12awP8HbKRuZpYXII6WrJJKbOwJ5qZBKn?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1B8BZGvEd62K6fMIp34bXHWh9AfCr2rAS?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2022
+Adobe Lightroom Classic 2025
 </a>
 
-<a href="https://drive.google.com/drive/folders/1xr16B86VJMDF__tnMp_IyX7VX8wFfQwR?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1BPktYCtaa1metq0AZqzZf-HpwpX9dLWY?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2024
+Adobe Premiere Pro 2025
 </a>
 
-<a href="https://drive.google.com/drive/folders/18cnlSFvoB220sZVqSUOLbJSTkCwk9qbU?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1J-2AnpXYAofYKbH2kO512hHinD3xB_Vf?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2025
+Adobe After Effects 2025
 </a>
 
+<a href="https://drive.google.com/drive/folders/1Wn47zxcL7fZawSLhMO5mkBmbnxIFuO82?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Audition 2025
+</a>
 <a href="https://drive.google.com/drive/folders/1HgQpN8ZlXtz3irsdm26rgU8ib7wLTqkd?usp=sharing" target="_blank">
 <i class="fa-solid fa-cube"></i>
-Adobe 2026
+Adobe Substance 3D Painter 2025
+</a>
+<a href="https://drive.google.com/drive/folders/1HgQpN8ZlXtz3irsdm26rgU8ib7wLTqkd?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Substance 3D Designer 2025
 </a>
 
 <a href="https://sites.google.com/view/academiadigitalproductiva/otros-cursos/curso-de-dise%C3%B1o-grafico" target="_blank" class="curso-btn">
@@ -876,43 +1005,155 @@ Cursos de Diseño Gráfico desde Cero
 </div>
 
 </div>
+<div class="card">
 
+<h3>
+<i class="fa-brands fa-adobe"></i>
+Adobe Creative Cloud <span>2026</span>
+</h3>
+
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1ZJMO-ImLiEjz4UEwTdqZvSz9KpH6pmlM?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Photoshop 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/1g9dajZt429W_tlw9uOVJQZ6dN25aK0CJ?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Illustrator 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Lightroom Classic 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/1xGh5qCUuugB_ev7Oh_JPrIoaXWpeTrrv?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Premiere Pro 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/18cnlSFvoB220sZVqSUOLbJSTkCwk9qbU?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe After Effects 2026
+</a>
+
+<a href="https://drive.google.com/drive/folders/1HgQpN8ZlXtz3irsdm26rgU8ib7wLTqkd?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Audition 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1CHStdm_GnJ7L5t8sPAb52E1zn6Xl2fAF?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Substance 3D Painter 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1HgQpN8ZlXtz3irsdm26rgU8ib7wLTqkd?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe Substance 3D Designer 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i>
+Adobe InDesign 2026
+</a>
+<a href="https://sites.google.com/view/academiadigitalproductiva/otros-cursos/curso-de-dise%C3%B1o-grafico" target="_blank" class="curso-btn">
+Cursos de Diseño Gráfico desde Cero
+</a>
+</div>
+
+</div>
 <!-- AUTODESK PREMIUM -->
 
 <div class="card">
 
-<h3>Ingeniería & Arquitectura (Autodesk) 2020–2026</h3>
+<h3>Ingeniería & Arquitectura (Autodesk) 2025</h3>
+
+<div class="adobe-links">
+
+<a href="https://drive.google.com/drive/folders/1VDKk7aS99IVMomqenx1d7GAFWC00-t8w?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk AutoCAD 2025
+</a>
+
+<a href="LINK_AUTODESK_2021" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Revit  2025
+</a>
+
+<a href="https://drive.google.com/drive/folders/1M-CBybaRPHgHTn7uN1zhYwpatx2SdkCc?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk AutoCAD Civil 3D 2025
+</a>
+
+<a href="LINK_AUTODESK_2023" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk InfraWorks 2025
+</a>
+
+<a href="LINK_AUTODESK_2024" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Navisworks Manage 2025
+</a>
+
+<a href="https://drive.google.com/drive/folders/1GSNOi1ECm5aNmuln-AN13NZ8DTm0X9jV?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Maya 2025
+</a>
+
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk 3DS MAX 2025
+</a>
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk ReCap Pro 2025
+</a>
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Alias 2025
+</a>
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Vault Professional 2025
+</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Ingeniería & Arquitectura (Autodesk) 2026</h3>
 
 <div class="adobe-links">
 
 <a href="LINK_AUTODESK_2020" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2020
+<i class="fa-solid fa-cube"></i> Autodesk AutoCAD 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1HFx8dR6mz4nehzDJj72SwWEqjAvtv0Yo?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Inventor Pro 2026
 </a>
 
-<a href="LINK_AUTODESK_2021" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2021
+<a href="https://drive.google.com/drive/folders/1KwWvwYXi2k_xpQckpU4VhNkAKgot1W0V?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Revit  2026
 </a>
 
-<a href="LINK_AUTODESK_2022" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2022
+<a href="https://drive.google.com/drive/folders/1MRrzOx_roBk5syq5irxBjMtAo_-JQwVk?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk AutoCAD Civil 3D 2026
 </a>
 
 <a href="LINK_AUTODESK_2023" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2023
+<i class="fa-solid fa-cube"></i> Autodesk InfraWorks 2026
 </a>
 
 <a href="LINK_AUTODESK_2024" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2024
+<i class="fa-solid fa-cube"></i> Autodesk Navisworks Manage 2026
 </a>
 
 <a href="https://drive.google.com/drive/folders/1rFXf_j4QCUhGGfCcF2bMpd6DnDbLFIod?usp=sharing" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2025
+<i class="fa-solid fa-cube"></i> Autodesk Maya 2026
 </a>
 
 <a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
-<i class="fa-solid fa-cube"></i> Autodesk 2026
+<i class="fa-solid fa-cube"></i> Autodesk 3DS MAX 2026
 </a>
-
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk ReCap Pro 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Alias 2026
+</a>
+<a href="https://drive.google.com/drive/folders/1OHD0B-Lui0L0v6tMxvgFU8bBXH6EzIcB?usp=sharing" target="_blank">
+<i class="fa-solid fa-cube"></i> Autodesk Vault Professional 2026
+</a>
 </div>
 
 </div>
@@ -929,14 +1170,89 @@ Software Básico para PC
 <a href="https://drive.google.com/drive/folders/1uFOaj8dbQfe9nry4PSEAAIQJYK4gYopw?usp=sharing" target="_blank">
  OFFICE 2024
 </a>
-
+<div class="subtitulo-categoria">
+ Utilidades y PDF
+</div>
 <a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
- Adobe Acrobat Pro DC 2021
+ Adobe Acrobat Pro DC 2025
 </a>
 
 <a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
- Programas multimedia
+ Foxit PDF Editor Pro
 </a>
+
+<a href="https://drive.google.com/drive/folders/1uFOaj8dbQfe9nry4PSEAAIQJYK4gYopw?usp=sharing" target="_blank">
+ Nitro PDF Pro 2025
+</a>
+
+
+<div class="subtitulo-categoria">
+ Compresión y archivos
+</div>
+
+<a href="https://drive.google.com/file/d/1ATSpuNPLDQURkR6pIiKR9D56gxdvseIG/view?usp=sharing" target="_blank">
+ WinRAR
+</a>
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+ 7-Zip
+</a>
+
+<div class="subtitulo-categoria">
+ Navegadores y herramientas web
+</div>
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+Google Chrome
+</a>
+
+<a href="https://drive.google.com/drive/folders/1uFOaj8dbQfe9nry4PSEAAIQJYK4gYopw?usp=sharing" target="_blank">
+ Mozilla Firefox
+</a>
+
+<div class="subtitulo-categoria">
+ Reproductores multimedia
+</div>
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+ VLC Media Player
+</a>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ The KMPlayer 2026
+</a>
+
+<div class="subtitulo-categoria">
+ Videollamadas y trabajo remoto
+</div>
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+ Zoom
+</a>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ Microsoft Teams
+</a>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ AnyDesk
+</a>
+
+<div class="subtitulo-categoria">
+ Drivers y optimización
+</div>
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ Driver Booster
+</a><a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ CCleaner
+</a>
+
+<div class="subtitulo-categoria">
+ Diseño básico y estudio
+</div>
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ Canva
+</a><a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+ PaintTool SAI
+</a>
+
+
 </div>
 
 </div>
@@ -951,22 +1267,44 @@ Edición Profesional Full
 </h3>
 <div class="adobe-links">
 
-<a href="https://drive.google.com/drive/folders/1PdhorDPc3xM0CKP8ObV7eThmr4315OIq?usp=sharing" target="_blank">
-Filmora (9–14)
+<a href="https://drive.google.com/drive/folders/1X9xOKqJih6hzsEODTkYh07Wd4Zz9zfED?usp=sharing" target="_blank">
+Filmora 14
 </a>
-
+<div class="subtitulo-categoria">
+ Edición de Video
+</div>
 <a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
-Sony Vegas Pro
+DaVinci Resolve
 </a>
-
-<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+VEGAS Pro
+</a><a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+CapCut
+</a><a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
 Camtasia
 </a>
-<a href="https://drive.google.com/drive/folders/1E-27qB7d0iF1-V-h8AS7X7CirPkw_W7T?usp=sharing" target="_blank">
-4K Video Downloader
+<div class="subtitulo-categoria">
+Streaming y Grabación
+</div>
+<a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+OBS Studio
+</a><a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+Streamlabs Desktop
+</a><a href="https://drive.google.com/drive/folders/1egDIRMaYHhCS0WJvCAETu2_VN428_rO9?usp=sharing" target="_blank">
+Bandicam
+</a>
+<div class="subtitulo-categoria">
+Audio y Voz
+</div>
+
+<a href="https://drive.google.com/drive/folders/1j2gzSoilLnvKHKqjv_hL_C2hLeyvtXAo?usp=sharing" target="_blank">
+Audacity
 </a>
 <a href="https://drive.google.com/drive/folders/1E-27qB7d0iF1-V-h8AS7X7CirPkw_W7T?usp=sharing" target="_blank">
-CapCut
+FL Studio
+</a>
+<a href="https://drive.google.com/drive/folders/1E-27qB7d0iF1-V-h8AS7X7CirPkw_W7T?usp=sharing" target="_blank">
+Voicemod
 </a>
 </div>
 
@@ -978,21 +1316,42 @@ CapCut
 
 <h3>
 <i class="fa-solid fa-palette"></i>
-Diseño Gráfico Full 2025-2026
+Diseño Gráfico e Ilustración
 </h3>
 <div class="adobe-links">
 
 <a href="https://drive.google.com/drive/folders/1EIb_Ksck0Qwifp2W9azx7cDp3P3gNoUJ?usp=sharing" target="_blank">
 CorelDRAW 2026
 </a>
-
+<a href="https://drive.google.com/drive/folders/1oijIjWK6AmiYxQ1JXH88FeCsdbF8p_uy?usp=sharing" target="_blank">
+SketchUp 2026
+</a>
+<div class="subtitulo-categoria">
+Modelado y Recursos 3D
+</div>
 <a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
-Adobe Lightroom 2026
+Blender 5.1.2
 </a>
 
-<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
-Adobe InDesign 2026
+<div class="subtitulo-categoria">
+Impresión y Negocios
+</div>
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+BarTender
 </a>
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Poster Designer
+</a>
+<div class="subtitulo-categoria">
+Edición y Fotografía
+</div>
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Affinity Photo
+</a>
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+PhotoScape X
+</a>
+
 </div>
 
 </div>
@@ -1011,14 +1370,19 @@ Recuperación y Optimización
 <a href="https://drive.google.com/drive/folders/1nMk7504BeDLwZZiHGpnjP0KkGrONkMgM?usp=sharing" target="_blank">
 EaseUS Data Recovery Wizard 
 </a>
-
+<div class="subtitulo-categoria">
+Recuperación de Archivos
+</div>
 <a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
 Recuva
 </a>
-
-<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
-CCleaner
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+Wondershare Recoverit
 </a>
+<a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
+MiniTool Power Data Recovery
+</a>
+
 </div>
 
 </div>
@@ -1039,12 +1403,38 @@ Kaspersky
 </a>
 
 <a href="https://drive.google.com/drive/folders/196sktBg9rhUWC-J-YmYB_iX2VhOWNtrR?usp=sharing" target="_blank">
-Avast Antivirus
+ESET NOD32 Antivirus
 </a>
 
 <a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
-Windows Defender
+Bitdefender Total Security
 </a>
+<a href="https://drive.google.com/drive/folders/1r1BhlcgoIbY7nFKOEiP5jW464xQwJM5e?usp=sharing" target="_blank">
+Avast Premium Security
+</a>
+
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+<i class="fa-solid fa-shield-halved"></i>
+Acceso Remoto y Soporte
+</h3>
+<div class="adobe-links">
+
+<a href="https://drive.google.com/file/d/14708ttONAtAxedv2Ob8CRNukgJY88E1f/view?usp=sharing" target="_blank">
+AnyDesk
+</a>
+
+<a href="https://drive.google.com/file/d/1k31kG8LIrtD8oU8ylhbScJYUfSy271f8/view?usp=sharing" target="_blank">
+TeamViewer
+</a>
+
 </div>
 
 </div>
